@@ -11,7 +11,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise2()
+    practise3()
 
 
 
@@ -61,7 +61,31 @@ def practise2():
     y = 100001
     print(f"y shift 5 times is to the right {y >> 5}")
 
+def practise3():
+    a: int = 0
+    b: int = 5
 
+    while True:
+        if a < b:
+            print("Yes")
+        else: 
+            print("No")
+            break
+        a+=1
+
+    while True: # This is a bad infinite example
+        suffix = '.htm'
+        if suffix == ".htm":
+            content = 'text/html'
+            suffix = '.jpg'
+            print(content)
+        elif suffix == '.jpg':
+            content = 'image/jpeg'
+            print(content)
+            suffix= "Laika"
+        else: 
+            raise RuntimeError(f"Unknown content type {suffix!r}")
+            
 
 if __name__ == '__main__':
     main()
