@@ -2,6 +2,7 @@
 @ Author: Muhammad Saad Khan
 @ Date: 11 - 07 - 2026
 @ Name: Part1.py
+@ Version: Python 3.12.3 on Linux
 
 Description:
 
@@ -11,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise3()
+    practise4()
 
 
 
@@ -85,7 +86,36 @@ def practise3():
             suffix= "Laika"
         else: 
             raise RuntimeError(f"Unknown content type {suffix!r}")
-            
+
+def practise4():
+    # Combinatory assignment
+    a: int = 0
+    b: int = 1
+    x = a if a > b else b
+    print("X is", x)
+
+    # Walrus op, this is assignment based on combinatory logic
+    y = 0
+    while (y := y + 1) < 10:
+        print("Y is", y)
+        
+    suffix = '.htm'
+    
+    # There is a continue that goes back to the top of the loop
+    while True: # This is a bad infinite example
+        
+        if suffix == ".htm":
+            content = 'text/html'
+            suffix = '.jpg'
+            print(content)
+            continue
+        elif suffix == '.jpg':
+            content = 'image/jpeg'
+            print(content)
+            suffix= "Laika"
+            continue
+        else: 
+            raise RuntimeError(f"Unknown content type {suffix!r}")
 
 if __name__ == '__main__':
     main()
