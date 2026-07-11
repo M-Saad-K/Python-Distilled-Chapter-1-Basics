@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise4()
+    practise5()
 
 
 
@@ -116,6 +116,14 @@ def practise4():
             continue
         else: 
             raise RuntimeError(f"Unknown content type {suffix!r}")
+
+def practise5():
+    # For decimal
+    gravity: float = 9.89999
+    print(f"This is round {gravity:.2f}")
+
+    
+
 
 if __name__ == '__main__':
     main()
