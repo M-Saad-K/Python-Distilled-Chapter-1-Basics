@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise5()
+    practise7()
 
 
 
@@ -122,8 +122,24 @@ def practise5():
     gravity: float = 9.89999
     print(f"This is round {gravity:.2f}")
 
-    
+def practise6():
+    # Char array
+    greeting: str = "Hello my name is Saad and I study CES at Strathclyde"
+    print(len(greeting))
+    b = greeting[4]
+    print(b)
+    e = greeting[3:10]
+    print(e)
+    greeting = greeting.replace('Saad', 'Laika')
+    print(greeting)
 
+def practise7():
+    sentence: str = "The big brown rabbit jumped over the red fox" 
+    print(sentence.endswith("fox", 41, 44))
+    print(sentence.find("rabbit"))
+    newSent = sentence.split(" ", 4)
+    print(newSent)
+    # strip removes an trailing whitespace
 
 if __name__ == '__main__':
     main()
