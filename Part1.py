@@ -140,6 +140,10 @@ def practise7():
     newSent = sentence.split(" ", 4)
     print(newSent)
     # strip removes an trailing whitespace
+    #  format as strings using str() and repr()
+    x: int = 5
+    forcast: str = "Weather is " + str(x) + "*c\nGlasgow, Scotland"
+    print(forcast)
 
 if __name__ == '__main__':
     main()
