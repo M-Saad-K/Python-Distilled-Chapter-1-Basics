@@ -142,8 +142,8 @@ def practise7():
     # strip removes an trailing whitespace
     #  format as strings using str() and repr()
     x: int = 5
-    forcast: str = "Weather is " + str(x) + "*c\nGlasgow, Scotland"
-    print(forcast)
+    forcast: str = "                           Weather is " + str(x) + "*c\nGlasgow, Scotland                                                                    "
+    print(forcast.strip())
 
 if __name__ == '__main__':
     main()
