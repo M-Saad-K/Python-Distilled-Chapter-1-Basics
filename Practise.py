@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise10()
+    practise13()
 
 
 
@@ -199,6 +199,52 @@ def practise10():
     print(objectList[1])
     print(objectList[2][0])
     print(objectList[2][3][1])
+
+def practise11():
+    # tuple is done using (), not [], can't change
+    holding = ('GOOG', 100, 480.10)
+    address = ('www.python.org', 80)
+    onlyOneElementTuple = (1,)
+    emptyTuple = ()
+
+    # Assign to variables
+    stock, shares, price = holding
+    url, id = address
+
+def practise12():
+    portfolio = []
+    total: float = 0.0
+    with open("stock.txt") as file:
+        for line in file:
+            row = line.split(',')
+            name = row[0]
+            noShare = row[1]
+            priceP = row[2]
+            holdings = (name, noShare, priceP)
+            portfolio.append(holdings)
+            for name, noShare, priceP in portfolio:
+                total += (int(noShare) * float(priceP))
+    print(portfolio, total)
+
+def practise13():
+    # Sets, order is not predicted, and things can only appear once, and unpredicted position
+    portfolio = ("Art", "Part", "Cart", "Part")
+    # Return all the elements into set
+    names = {i for i in portfolio}
+    #print(names)
+
+    jobs = {"Art", "Lark", "Bark"}
+
+    names.add('Mark')
+    jobs.update({'Cart', 'Part', 'Mart'}) # need braces
+    names.remove('Art')
+
+    # Comparing set elements
+    print(names | jobs)
+    print(names & jobs)
+    print(names - jobs)
+    print(jobs - names)
+    print(names ^ jobs) # Either but not both
 
 
 
