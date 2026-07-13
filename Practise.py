@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise8()
+    practise10()
 
 
 
@@ -178,7 +178,28 @@ def practise8():
     name = input("What is your name: ")
     print(name)
 
+def practise9():
+    arr: int = [1, 2, 4, 5]
+    #End of list
+    arr.append(6)
+    # Any point
+    arr.insert(2, 9)
+
+    # Turn into list
+    daveBroke = list('Dave')
     
+    for i in arr:
+        print(i)
+
+    print(daveBroke)
+    
+def practise10():
+    # Nested list
+    objectList  = [1, 'Dave', ['Mark', 7, 9, [100, 101]], 10]
+    print(objectList[1])
+    print(objectList[2][0])
+    print(objectList[2][3][1])
+
 
 
 if __name__ == '__main__':
