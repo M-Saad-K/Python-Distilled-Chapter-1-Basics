@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    input = practise16()
+    input = practise17()
     output = practise16(input)
     print(output)
 
