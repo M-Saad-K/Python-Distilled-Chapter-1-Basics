@@ -270,5 +270,7 @@ def practise14():
    p = s.get('prices', 0.0) # Get prices or 0.0
    print("p =", p)
 
+   del s['name'] # removing elements
+   print(s)
 if __name__ == '__main__':
     main()
