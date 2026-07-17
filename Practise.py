@@ -12,8 +12,9 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise15()
-
+    input = practise16()
+    output = practise16(input)
+    print(output)
 
 
 def practise0():
@@ -306,8 +307,12 @@ def practise15():
         for line in file:
             print(line)
 
-def practise16(input):
+def practise16(input : int):
     return input*2
+    # for multiple values, use tuples
+
+def practise17():
+    return input("User input an int")
 
 
 if __name__ == '__main__':
