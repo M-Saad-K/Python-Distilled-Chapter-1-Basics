@@ -241,7 +241,6 @@ def practise13():
 
     # Comparing set elements
     print(names | jobs)
-    print("Testing this")
     print(names & jobs)
     print(names - jobs) 
     print(jobs - names)
