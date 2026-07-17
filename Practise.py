@@ -300,5 +300,12 @@ def practise15():
 
     for key in book1:
         print(key," = ", book1[key])
+
+    # file opening
+    with open('input.txt') as file:
+        for line in file:
+            print(line)
+
+            
 if __name__ == '__main__':
     main()
