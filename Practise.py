@@ -246,6 +246,7 @@ def practise13():
     print(jobs - names)
     print(names ^ jobs) # Either but not both
 
+def practise14():
    
 
 if __name__ == '__main__':
