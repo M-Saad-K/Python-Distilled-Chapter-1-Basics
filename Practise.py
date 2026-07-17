@@ -283,5 +283,8 @@ def practise14():
    print(total_shares)
    # Get keys
    print(total_shares.keys())
+
+def practise15():
+    return
 if __name__ == '__main__':
     main()
