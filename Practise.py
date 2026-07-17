@@ -288,5 +288,7 @@ def practise15():
     # range(i, j, steps) , like range(0, 8) -> 0 -> 7, and 0, 8, 2 -> 0, 2, 4, 6
     for i in range(0, 8, 2):
         print(i)
+    for j in range(100, 0, -5):
+        print(j)
 if __name__ == '__main__':
     main()
