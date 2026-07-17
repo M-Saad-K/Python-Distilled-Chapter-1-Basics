@@ -290,5 +290,15 @@ def practise15():
         print(i)
     for j in range(100, 0, -5):
         print(j)
+
+    # for dict
+    book1 = {
+        'Fict' : "Klara and the Sun",
+        'Auth' : 'Kazuo',
+        'Num' : 2,
+    }
+
+    for key in book1:
+        print(key," = ", book1[key])
 if __name__ == '__main__':
     main()
