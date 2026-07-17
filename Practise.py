@@ -247,7 +247,12 @@ def practise13():
     print(names ^ jobs) # Either but not both
 
 def practise14():
-   return
+   # Dicitonaries
+   s = {
+        'name' : 'AAPL',
+        'shares' : 100,
+        'prices' : 490.10
+   }
 
 if __name__ == '__main__':
     main()
