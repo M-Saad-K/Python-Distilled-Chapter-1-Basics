@@ -259,5 +259,16 @@ def practise14():
 
    s['shares'] = 1249.80
 
+   p = 1
+
+   if 'prices' in s:
+        p = s['prices']
+   else:
+        p = 0.0
+
+   # or write this
+   p = s.get['prices', 0.0] # Get prices or 0.0
+   print("p =", p)
+
 if __name__ == '__main__':
     main()
