@@ -257,5 +257,7 @@ def practise14():
    name = s['name'] # Must reference the name of the dictionary
    print(name)
 
+   s['shares'] = 1249.80
+
 if __name__ == '__main__':
     main()
