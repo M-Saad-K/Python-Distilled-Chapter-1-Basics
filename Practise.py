@@ -272,5 +272,16 @@ def practise14():
 
    del s['name'] # removing elements
    print(s)
+
+   portfolio = {
+        ('GOOG', 1.8, 300),
+        ('AAPL', 5.6, 320),
+        ('NVID', 2.1, 567) }
+   total_shares = {s[0]: 0 for s in portfolio}
+   for names, shares, _ in portfolio:
+        total_shares[names]+= shares
+   print(total_shares)
+   # Get keys
+   print(total_shares.keys())
 if __name__ == '__main__':
     main()
