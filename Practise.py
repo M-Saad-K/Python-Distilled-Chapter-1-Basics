@@ -254,5 +254,8 @@ def practise14():
         'prices' : 490.10
    }
 
+   name = s['name'] # Must reference the name of the dictionary
+   print(name)
+
 if __name__ == '__main__':
     main()
