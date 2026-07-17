@@ -307,12 +307,13 @@ def practise15():
         for line in file:
             print(line)
 
-def practise16(input : int):
-    return input*2
+def practise16(input):
+    out = int(input) * 2
+    return out
     # for multiple values, use tuples
 
 def practise17():
-    return input("User input an int")
+    return input("User input an int:  ")
 
 
 if __name__ == '__main__':
