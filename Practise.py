@@ -12,9 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    input = practise17()
-    output = practise16(input)
-    print(output)
+    practise18()
 
 
 def practise0():
@@ -315,6 +313,21 @@ def practise16(input):
 def practise17():
     return input("User input an int:  ")
 
+def practise18():
+    # Bascially try and catch
+    num: int = 2
+    name: str = ""
+    try:
+        
+        name = num
+    except ValueError as err:
+        print(err)
+        print("This error occurred with the assignment of num to name, two different types")
+
+    # There is also try finally if always runs the finally
+    # prog termination
+    if name != "Saad":
+        raise SystemExit("This is not Saad")
 
 if __name__ == '__main__':
     main()
