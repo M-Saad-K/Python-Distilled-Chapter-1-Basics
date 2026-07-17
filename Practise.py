@@ -12,7 +12,7 @@ This page covers task from 1.1 -> 1.6
 import sys
 
 def main():
-    practise14()
+    practise15()
 
 
 
@@ -282,7 +282,7 @@ def practise14():
         total_shares[names]+= shares
    print(total_shares)
    # Get keys
-   print(total_shares.keys())]
+   print(total_shares.keys())
 
 def practise15():
     # range(i, j, steps) , like range(0, 8) -> 0 -> 7, and 0, 8, 2 -> 0, 2, 4, 6
