@@ -267,7 +267,7 @@ def practise14():
         p = 0.0
 
    # or write this
-   p = s.get['prices', 0.0] # Get prices or 0.0
+   p = s.get('prices', 0.0) # Get prices or 0.0
    print("p =", p)
 
 if __name__ == '__main__':
