@@ -9,6 +9,7 @@ Description:
 This page covers task from 1.1 -> 1.6
 """
 
+from asyncio import open_connection
 import sys
 
 def main():
@@ -323,11 +324,14 @@ def practise18():
     except ValueError as err:
         print(err)
         print("This error occurred with the assignment of num to name, two different types")
-
+  
     # There is also try finally if always runs the finally
     # prog termination
     if name != "Saad":
         raise SystemExit("This is not Saad")
+
+    # this exit does it best effort to garbage collect active objects.
+    # If you want to do all delete and close connection, do atexit - but that is to learn later
 
 if __name__ == '__main__':
     main()
