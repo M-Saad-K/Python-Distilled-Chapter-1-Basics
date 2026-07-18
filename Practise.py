@@ -352,7 +352,13 @@ class Stack:
         return len(self.__items)
 
 def practise19():
-
+    myStack = Stack()
+    for i in range(8):
+        myStack.push(i)
+    x = myStack.pop()
+    myStack.__len__()
+    myStack.__repr__()
+    print(x)
 
 if __name__ == '__main__':
     main()
