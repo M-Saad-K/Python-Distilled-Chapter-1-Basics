@@ -333,5 +333,19 @@ def practise18():
     # this exit does it best effort to garbage collect active objects.
     # If you want to do all delete and close connection, do atexit - but that is to learn later
 
+# Time for OOP
+class Stack:
+    def __init__(self): # This is an initialisation
+        self.__item = [] # We are initalising an empty list
+
+    def push(self, item):
+        self._item.append(item)
+    
+    def pop(self):
+        self._items.pop()
+    
+    def __repr__(self):
+
+
 if __name__ == '__main__':
     main()
