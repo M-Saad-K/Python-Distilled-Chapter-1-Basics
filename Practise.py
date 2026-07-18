@@ -345,7 +345,10 @@ class Stack:
         self._items.pop()
     
     def __repr__(self):
+        return f'<{type(self).__name__} at 0x{id(self):x}, size={len(self)}>'
 
+    def __len__(self):
+        return len(self._items)
 
 if __name__ == '__main__':
     main()
