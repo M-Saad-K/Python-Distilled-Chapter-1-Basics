@@ -337,18 +337,22 @@ def practise18():
 class Stack:
     def __init__(self): # This is an initialisation
         self.__item = [] # We are initalising an empty list
+        # The __ makes its private to the class!
 
     def push(self, item):
-        self._item.append(item)
+        self.__item.append(item)
     
     def pop(self):
-        self._items.pop()
+        return self.__items.pop() # In Java, we had to return the item that was popped, same convention here
     
     def __repr__(self):
         return f'<{type(self).__name__} at 0x{id(self):x}, size={len(self)}>'
 
     def __len__(self):
-        return len(self._items)
+        return len(self.__items)
+
+def practise19():
+
 
 if __name__ == '__main__':
     main()
