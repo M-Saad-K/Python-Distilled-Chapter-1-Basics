@@ -333,7 +333,7 @@ def practise18():
     # this exit does it best effort to garbage collect active objects.
     # If you want to do all delete and close connection, do atexit - but that is to learn later
 
-# Time for OOP
+# Time for OOP, now we will start using classes
 class Stack:
     def __init__(self): # This is an initialisation
         self.__item = [] # We are initalising an empty list
@@ -343,13 +343,13 @@ class Stack:
         self.__item.append(item)
     
     def pop(self):
-        return self.__items.pop() # In Java, we had to return the item that was popped, same convention here
+        return self.__item.pop() # In Java, we had to return the item that was popped, same convention here
     
     def __repr__(self):
         return f'<{type(self).__name__} at 0x{id(self):x}, size={len(self)}>'
 
     def __len__(self):
-        return len(self.__items)
+        return len(self.__item)
 
 def practise19():
     myStack = Stack()
