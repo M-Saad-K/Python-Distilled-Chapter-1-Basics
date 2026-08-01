@@ -396,7 +396,7 @@ class tree:
 
 
 class node:
-    def __init__(self, value, left=None, right=None, parent=None): # These are its parameters
+    def __init__(self, value, left=None, right=None, parent=None): # These are its parameters, when we put in left and right we do non 
         self._value = value # Initialisation of the value
         self._left = None
         self._right = None
@@ -438,7 +438,11 @@ def practise19():
 
 def practise20():
     # Practising binary tree
-
+    tree = tree()
+    tree.insert(node(5))
+    tree.insert(node(3))
+    tree.insert(node(7))
+   
 
 if __name__ == '__main__':
     main()
