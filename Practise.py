@@ -386,6 +386,13 @@ class tree:
         if self._item is None:
             print("Tree is empty")
             return
+        
+        if self._item.getLeft() is not None: # If has left, go to left and if left is non, print the value
+            self._item.getLeft().inOrder()
+        print(self._item.getValue(), end = ' ')
+
+        if self._item.getRight() is not None: # If has right, go to right and if right is non, print the value
+            self._item.getRight().inOrder() # 
 
 
 class node:
