@@ -442,7 +442,11 @@ def practise20():
     tree.insert(node(5))
     tree.insert(node(3))
     tree.insert(node(7))
-   
+    tree.insert(node(2))
+    tree.insert(node(4))
+    tree.insert(node(6))
+    tree.insert(node(8))
+  
 
 if __name__ == '__main__':
     main()
