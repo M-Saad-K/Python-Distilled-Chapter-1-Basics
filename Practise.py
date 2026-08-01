@@ -351,6 +351,9 @@ class Stack:
     def __len__(self):
         return len(self.__item)
 
+    def __str__(self):
+        print(self.__item)
+
 def practise19():
     myStack = Stack()
     for i in range(8):
