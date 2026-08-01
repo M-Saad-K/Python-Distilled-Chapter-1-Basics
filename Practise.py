@@ -354,6 +354,9 @@ class Stack:
     def __str__(self):
         print(self.__item)
 
+class tree:
+    def __init__(self, data, left=None, right=None):
+
 def practise19():
     myStack = Stack()
     for i in range(8):
