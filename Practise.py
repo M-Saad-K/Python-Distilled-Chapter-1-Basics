@@ -361,7 +361,14 @@ class tree:
     def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
         if self._item is None:
             self._item.append(data)
-        elif data < self._item:
+        elif node < self._item:
+
+
+class node:
+    def __init__(self, value, left=None, right=None, parent=None): # These are its parameters
+        self._data = data
+        self._left = None
+        self._right = None
 
 
 def practise19():
