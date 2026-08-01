@@ -354,9 +354,10 @@ class Stack:
     def __str__(self):
         print(self.__item)
 
+# Implemeting a linked list binary tree
 class tree:
-    def __init__(self): # data is a node, left and right are the children
-        self._item = []
+    def __init__(self, root=None): # data is a node, left and right are the children
+        self._item = root
 
     def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
         if self._item is None:
@@ -377,6 +378,15 @@ class tree:
         else:
             # Can't insert the node, it already exists
             print("Node already exists")
+    
+    def inOrder(self):
+        # If has no left or right, print the value
+        # if has left, call inOrder on the left
+        # if has right, call inOrder on the right
+        if self._item is None:
+            print("Tree is empty")
+            return
+
 
 class node:
     def __init__(self, value, left=None, right=None, parent=None): # These are its parameters
