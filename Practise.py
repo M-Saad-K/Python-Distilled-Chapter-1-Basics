@@ -446,7 +446,7 @@ def practise20():
     tree.insert(node(4))
     tree.insert(node(6))
     tree.insert(node(8))
-  
+    tree.inOrder()
 
 if __name__ == '__main__':
     main()
