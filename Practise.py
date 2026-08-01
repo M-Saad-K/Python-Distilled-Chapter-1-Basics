@@ -362,7 +362,7 @@ class tree:
     def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
         if self._item is None:
             self._item.append(data)
-        elif node.getValue() < self._item: # TODO: Create a recursive function to insert the node, since the next node could also have sub trees
+        elif node.getValue() < self._item: 
 
             if self._item.getLeft() is None:
                 self._item.setLeft(node)
@@ -392,7 +392,7 @@ class tree:
         print(self._item.getValue(), end = ' ')
 
         if self._item.getRight() is not None: # If has right, go to right and if right is non, print the value
-            self._item.getRight().inOrder() # 
+            self._item.getRight().inOrder()  
 
 
 class node:
@@ -435,6 +435,10 @@ def practise19():
     print(x)
     print(myStack.__len__())
     myStack.__str__()
+
+def practise20():
+    # Practising binary tree
+
 
 if __name__ == '__main__':
     main()
