@@ -366,10 +366,34 @@ class tree:
 
 class node:
     def __init__(self, value, left=None, right=None, parent=None): # These are its parameters
-        self._data = data
+        self._value = value # Initialisation of the value
         self._left = None
         self._right = None
+        self._parent = None
 
+    def getValue(self):
+        return self._value
+    
+    def getLeft(self):
+        return self._left
+    
+    def getRight(self):
+        return self._right
+    
+    def getParent(self):
+        return self._parent
+    
+    def setValue(self, value):
+        self._value = value
+    
+    def setLeft(self, left):
+        self._left = left
+    
+    def setRight(self, right):
+        self._right = right
+    
+    def setParent(self, parent):
+        self._parent = parent
 
 def practise19():
     myStack = Stack()
