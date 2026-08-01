@@ -375,6 +375,8 @@ class tree:
             else:
                 self._item.getRight().insert(node)
         else:
+            # Can't insert the node, it already exists
+            print("Node already exists")
 
 class node:
     def __init__(self, value, left=None, right=None, parent=None): # These are its parameters
