@@ -361,8 +361,8 @@ def practise19():
     x = myStack.pop()
     myStack.__repr__()
     print(x)
-    print(myStack)
     print(myStack.__len__())
+    myStack.__str__()
 
 if __name__ == '__main__':
     main()
