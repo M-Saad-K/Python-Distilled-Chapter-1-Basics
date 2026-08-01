@@ -355,7 +355,9 @@ class Stack:
         print(self.__item)
 
 class tree:
-    def __init__(self, data, left=None, right=None):
+    def __init__(self, data, left=None, right=None): # data is a node, left and right are the children
+
+    def insert(self, data): # you must pass the self as a parameter, otherwise it will not know what to insert
 
 def practise19():
     myStack = Stack()
