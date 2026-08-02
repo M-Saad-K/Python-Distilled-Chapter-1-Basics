@@ -392,16 +392,12 @@ class tree:
     
         print(node.getValue(), end=' ')
     
-    if node.getRight() is not None:
-        self.inOrder(node.getRight())
+        if node.getRight() is not None:
+            self.inOrder(node.getRight())
     def inOrder(self, node):
         # If has no left or right, print the value
         # if has left, call inOrder on the left
-        # if has right, call inOrder on the right
-        if node.getLeft() is not None:
-            tree.inOrder(node.getLeft())
-        else:
-            print(node.getValue())
+        
 
 
     def getValue(self) -> int:
