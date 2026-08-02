@@ -402,7 +402,7 @@ class node:
         self._right = None
         self._parent = None
 
-    def getValue(self):
+    def getValue(self) -> int: # This is how you indicate that the return type
         return self._value
     
     def getLeft(self):
@@ -414,7 +414,7 @@ class node:
     def getParent(self):
         return self._parent
     
-    def setValue(self, value):
+    def setValue(self, value: int):
         self._value = value
     
     def setLeft(self, left):
