@@ -469,13 +469,13 @@ def practise19():
 def practise20():
     # Practising binary tree
     bintree = tree()
-    bintree.insert(node(5))
-    bintree.insert(node(3))
-    bintree.insert(node(7))
+    bintree.insert(node(5000000000))
+    bintree.insert(node(31))
+    bintree.insert(node(700))
     bintree.insert(node(2))
-    bintree.insert(node(4))
-    bintree.insert(node(6))
-    bintree.insert(node(8))
+    bintree.insert(node(14))
+    bintree.insert(node(64))
+    bintree.insert(node(13))
     bintree.inOrder()
 
 if __name__ == '__main__':
