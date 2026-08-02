@@ -385,7 +385,7 @@ class tree:
     
     def inOrder(self, node):
         if node is None:
-            return
+            return # Error control
     
         if node.getLeft() is not None:
             self.inOrder(node.getLeft()) # Instead of doing tree do self
