@@ -363,6 +363,7 @@ class tree:
 
         if self._item is None:
             self._item = node
+
         elif node.getValue() < self._item.getValue(): 
 
             if self._item.getLeft() is None:
@@ -374,26 +375,23 @@ class tree:
 
             if self._item.getRight() is None: 
                 self._item.setRight(node)
+
             else:
+
                 self._item.getRight().insert(node)
         else:
             # Can't insert the node, it already exists
             print("Node already exists")
     
-    def inOrder(self):
+    def inOrder(self, node):
         # If has no left or right, print the value
         # if has left, call inOrder on the left
         # if has right, call inOrder on the right
-        if self._item is None:
-            print("Tree is empty")
-            return
-        
-        if self._item.getLeft() is not None: # If has left, go to left and if left is non, print the value
-            self._item.getLeft().inOrder()
-        print(self._item.getValue(), end = ' ')
+        if node.getLeft() is not None:
+            tree.inOrder(node.getLeft())
+        else:
+            print(node.getValue())
 
-        if self._item.getRight() is not None: # If has right, go to right and if right is non, print the value
-            self._item.getRight().inOrder()  
 
     def getValue(self) -> int:
         if self._item == None:
@@ -447,7 +445,7 @@ class node :
             if self.getRight() is None: 
                 self.setRight(newNode)
             else:
-                self._item.getRight().insert(node)
+                self.getRight().insert(node)
         else:
             # Can't insert the node, it already exists
             print("Node already exists")
