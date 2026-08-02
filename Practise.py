@@ -451,7 +451,7 @@ class node :
             if self.getRight() is None: 
                 self.setRight(newNode)
             else:
-                self.getRight().insert(node)
+                self.getRight().insert(newNode)
         else:
             # Can't insert the node, it already exists
             print("Node already exists")
