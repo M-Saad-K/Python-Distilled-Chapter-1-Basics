@@ -383,7 +383,7 @@ class tree:
             # Can't insert the node, it already exists
             print("Node already exists")
     
-    def inOrder(self, node):
+    def inOrder(self, node=None):
         if node is None:
             return # Error control
     
