@@ -361,7 +361,7 @@ class tree:
 
     def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
         if self._item is None:
-            self._item.append(data)
+            self._item = node
         elif node.getValue() < self._item: 
 
             if self._item.getLeft() is None:
@@ -438,15 +438,15 @@ def practise19():
 
 def practise20():
     # Practising binary tree
-    tree = tree()
-    tree.insert(node(5))
-    tree.insert(node(3))
-    tree.insert(node(7))
-    tree.insert(node(2))
-    tree.insert(node(4))
-    tree.insert(node(6))
-    tree.insert(node(8))
-    tree.inOrder()
+    bintree = tree()
+    bintree.insert(node(5))
+    bintree.insert(node(3))
+    bintree.insert(node(7))
+    bintree.insert(node(2))
+    bintree.insert(node(4))
+    bintree.insert(node(6))
+    bintree.insert(node(8))
+    bintree.inOrder()
 
 if __name__ == '__main__':
     main()
