@@ -394,7 +394,6 @@ class tree:
     
         if node.getRight() is not None:
             self.inOrder(node.getRight())
-    def inOrder(self, node):
 
     def getValue(self) -> int:
         if self._item == None:
