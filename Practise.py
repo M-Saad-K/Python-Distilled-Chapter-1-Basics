@@ -360,16 +360,17 @@ class tree:
         self._item = root
 
     def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
+
         if self._item is None:
             self._item = node
-        elif node.getValue() < self._item: 
+        elif node.getValue() < self._item.getValue(): 
 
             if self._item.getLeft() is None:
                 self._item.setLeft(node)
             else:
                 self._item.getLeft().insert(node)
 
-        elif node.getValue() > self._item:
+        elif node.getValue() > self._item.getValue():
 
             if self._item.getRight() is None: 
                 self._item.setRight(node)
@@ -393,6 +394,12 @@ class tree:
 
         if self._item.getRight() is not None: # If has right, go to right and if right is non, print the value
             self._item.getRight().inOrder()  
+
+    def getValue(self) -> int:
+        if self._item == None:
+            return 0
+        else:
+            return int(self._item)
 
 
 class node:
