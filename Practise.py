@@ -402,7 +402,7 @@ class tree:
             return int(self._item)
 
 
-class node:
+class node :
     def __init__(self, value, left=None, right=None, parent=None): # These are its parameters, when we put in left and right we do non 
         self._value = value # Initialisation of the value
         self._left = None
@@ -432,6 +432,27 @@ class node:
     
     def setParent(self, parent):
         self._parent = parent
+
+    def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
+
+        if self._item is None:
+            self._item = node
+        elif node.getValue() < self._item.getValue(): 
+
+            if self._item.getLeft() is None:
+                self._item.setLeft(node)
+            else:
+                self._item.getLeft().insert(node)
+
+        elif node.getValue() > self._item.getValue():
+
+            if self._item.getRight() is None: 
+                self._item.setRight(node)
+            else:
+                self._item.getRight().insert(node)
+        else:
+            # Can't insert the node, it already exists
+            print("Node already exists")
 
 def practise19():
     myStack = Stack()
