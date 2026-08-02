@@ -384,11 +384,13 @@ class tree:
             print("Node already exists")
     
     def inOrder(self, node=None):
-        if node is None:
-            
+        
         if self._item is None:
             return # Error control
-    
+
+        if node is None:
+            node = self._item
+
         if node.getLeft() is not None:
             self.inOrder(node.getLeft()) # Instead of doing tree do self
     
