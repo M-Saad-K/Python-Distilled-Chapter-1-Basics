@@ -388,7 +388,7 @@ class tree:
             return
     
         if node.getLeft() is not None:
-        self.inOrder(node.getLeft())
+            self.inOrder(node.getLeft())
     
     print(node.getValue(), end=' ')
     
