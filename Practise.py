@@ -390,7 +390,7 @@ class tree:
         if node.getLeft() is not None:
             self.inOrder(node.getLeft())
     
-    print(node.getValue(), end=' ')
+        print(node.getValue(), end=' ')
     
     if node.getRight() is not None:
         self.inOrder(node.getRight())
