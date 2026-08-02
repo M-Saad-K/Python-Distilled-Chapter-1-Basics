@@ -384,6 +384,17 @@ class tree:
             print("Node already exists")
     
     def inOrder(self, node):
+        if node is None:
+            return
+    
+        if node.getLeft() is not None:
+        self.inOrder(node.getLeft())
+    
+    print(node.getValue(), end=' ')
+    
+    if node.getRight() is not None:
+        self.inOrder(node.getRight())
+    def inOrder(self, node):
         # If has no left or right, print the value
         # if has left, call inOrder on the left
         # if has right, call inOrder on the right
