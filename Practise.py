@@ -433,21 +433,19 @@ class node :
     def setParent(self, parent):
         self._parent = parent
 
-    def insert(self, node): # you must pass the self as a parameter, otherwise it will not know what to insert
+    def insert(self, newNode): # you must pass the self as a parameter, otherwise it will not know what to insert
+    # if less, got left, if more go right
+        if newNode.getValue() < self.getValue(): 
 
-        if self._item is None:
-            self._item = node
-        elif node.getValue() < self._item.getValue(): 
-
-            if self._item.getLeft() is None:
-                self._item.setLeft(node)
+            if self.getLeft() is None:
+                self.setLeft(newNode)
             else:
-                self._item.getLeft().insert(node)
+                self.getLeft().insert(newNode)
 
-        elif node.getValue() > self._item.getValue():
+        elif newNode.getValue() > self.getValue():
 
-            if self._item.getRight() is None: 
-                self._item.setRight(node)
+            if self.getRight() is None: 
+                self.setRight(newNode)
             else:
                 self._item.getRight().insert(node)
         else:
