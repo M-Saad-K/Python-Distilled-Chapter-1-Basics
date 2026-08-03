@@ -478,5 +478,8 @@ def practise20():
     bintree.insert(node(13))
     bintree.inOrder()
 
+def practise21():
+    
+
 if __name__ == '__main__':
     main()
