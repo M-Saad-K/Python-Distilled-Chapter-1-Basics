@@ -497,6 +497,10 @@ def practise22():
         filename = argv[1]
     else: 
         raise SystemExit(f"Usages: {argv[0]}[filename]") # its a tuple
+    
+    localportfolio = module.read_portfolio("filename" + ".txt")
+    for i in localportfolio:
+        print(i, end=" ")
 
 if __name__ == '__main__':
     main()
