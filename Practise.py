@@ -11,11 +11,14 @@ This page covers task from 1.1 -> 1.6
 
 from asyncio import open_connection
 import sys
-
+"""
 # import statment is just simplifly
 import module
 # you can also do
-#from module.py import read_portfolio
+#from module.py import read_portfolio"""
+
+from tutorial import module
+
 
 def main():
     practise22(sys.argv)
