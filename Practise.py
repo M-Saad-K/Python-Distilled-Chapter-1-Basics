@@ -503,5 +503,15 @@ def practise22(list = []):
     for i in localportfolio:
         print(i, end=" ")
 
+def practise23():
+    # Quick explaination about packages!
+    # Packages are a way of arranging modules in a hierachical collection
+    
+    # You put your files in a directory, with a __init__.py folder
+    # Then you can do, import directoryname.filename ...
+
+    # It is better to do this "from  . import readport", so you can later change the name
+    return
+
 if __name__ == '__main__':
     main()
