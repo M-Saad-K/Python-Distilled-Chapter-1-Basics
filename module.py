@@ -2,7 +2,7 @@
 def read_portfolio(filename):
     portfolio : int = []
 
-    with open(filename) in file:
+    with open(filename) as file:
         for line in file:
             row = line.split(", ")
             for word in row:
