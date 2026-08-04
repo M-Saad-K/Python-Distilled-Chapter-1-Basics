@@ -485,7 +485,7 @@ def practise20():
 
 def practise21():
     # using modules
-    localportfolio = read_portfolio('trades.txt')
+    localportfolio = module.read_portfolio('trades.txt')
     for i in localportfolio:
         print(i, end=" ")
 
