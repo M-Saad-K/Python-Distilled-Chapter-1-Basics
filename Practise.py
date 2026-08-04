@@ -18,7 +18,7 @@ import module
 #from module.py import read_portfolio
 
 def main():
-    practise21()
+    practise22()
 
 
 def practise0():
