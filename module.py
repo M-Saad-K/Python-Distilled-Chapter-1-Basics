@@ -2,7 +2,8 @@ import sys
 
 def main():
 
-    return
+    read_portfolio(trades.txt)
+
 
 def read_portfolio(filename):
     portfolio : int = []
