@@ -13,8 +13,7 @@ from asyncio import open_connection
 import sys
 
 # import statment is just simplifly
-from module import read_portfolio
-import module.py
+import module
 # you can also do
 #from module.py import read_portfolio
 
