@@ -492,7 +492,11 @@ def practise21():
 def practise22():
     # Using sys.argv
     if len(argv) == 1:
-        filename = input("Write the name of the file you want to be extracted in to portfolio")
+        filename = input("Write the name of the file you want to be extracted in to portfolio: ")
+    elif len(argv) == 2:
+        filename = argv[1]
+    else: 
+        raise SystemExit(f"Usages: {argv[0]}[filename]") # its a tuple
 
 if __name__ == '__main__':
     main()
