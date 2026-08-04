@@ -18,7 +18,7 @@ import module
 #from module.py import read_portfolio
 
 def main():
-    practise22()
+    practise22(sys.argv)
 
 
 def practise0():
