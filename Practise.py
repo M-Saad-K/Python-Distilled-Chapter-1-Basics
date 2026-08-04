@@ -499,7 +499,7 @@ def practise22(list = []):
     else: 
         raise SystemExit(f"Usages: {argv[0]}[filename]") # its a tuple
     
-    localportfolio = module.read_portfolio("filename" + ".txt")
+    localportfolio = module.read_portfolio(filename + ".txt")
     for i in localportfolio:
         print(i, end=" ")
 
