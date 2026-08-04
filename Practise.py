@@ -489,7 +489,8 @@ def practise21():
     for i in localportfolio:
         print(i, end=" ")
 
-def practise22():
+def practise22(list = []):
+    argv = list
     # Using sys.argv
     if len(argv) == 1:
         filename = input("Write the name of the file you want to be extracted in to portfolio: ")
