@@ -15,3 +15,6 @@ def read_portfolio(filename):
                 portfolio.append(word)
 
     return portfolio
+
+if __name__ == '__main__' :
+    main()
