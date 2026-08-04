@@ -488,6 +488,7 @@ def practise21():
     # using modules
     localportfolio = read_portfolio('trades.txt')
     for i in localportfolio:
+        print(i, end=" ")
 
 if __name__ == '__main__':
     main()
