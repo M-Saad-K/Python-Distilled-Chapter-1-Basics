@@ -479,6 +479,7 @@ def practise20():
     bintree.inOrder()
 
 def practise21():
+    # usinh modules
     
 
 if __name__ == '__main__':
