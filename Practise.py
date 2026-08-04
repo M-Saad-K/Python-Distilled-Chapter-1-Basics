@@ -12,6 +12,11 @@ This page covers task from 1.1 -> 1.6
 from asyncio import open_connection
 import sys
 
+# import statment is just simplifly
+import module.py
+# you can also do
+#from module.py import read_portfolio
+
 def main():
     practise20()
 
@@ -479,7 +484,7 @@ def practise20():
     bintree.inOrder()
 
 def practise21():
-    # usinh modules
+    # using modules
     
 
 if __name__ == '__main__':
